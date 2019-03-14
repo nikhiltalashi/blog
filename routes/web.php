@@ -21,7 +21,7 @@ Route::get('customers', function () {
     ];
     
     return view('internals.customers',[
-        'customers' => $customers;
+        'customers' => $customers
     ]);
 });
 
