@@ -12,7 +12,7 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('customer', function () {
+Route::get('customers', function () {
     return view('internals.customers');
 });
 
