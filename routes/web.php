@@ -13,6 +13,6 @@ Route::get('contact', function () {
 });
 
 Route::get('customer', function () {
-    return view('customer');
+    return view('internals.customers');
 });
 
