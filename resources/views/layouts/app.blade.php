@@ -1,16 +1,20 @@
-<!-- Stored in resources/views/layouts/app.blade.php -->
+// resources/views/layouts/app.blade.php
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>App Name - @yield('title')</title>
-    </head>
-    <body>
-        @section('sidebar')
-            This is the master sidebar.
-        @show
+        <title>Laravel Quickstart - Basic</title>
 
+        <!-- CSS And JavaScript -->
+    </head>
+
+    <body>
         <div class="container">
-            @yield('content')
+            <nav class="navbar navbar-default">
+                <!-- Navbar Contents -->
+            </nav>
         </div>
+
+        @yield('content')
     </body>
 </html>
