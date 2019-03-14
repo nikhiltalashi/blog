@@ -13,6 +13,15 @@ Route::get('contact', function () {
 });
 
 Route::get('customers', function () {
-    return view('internals.customers');
+    
+    $customers = [
+        'John',
+        'Alex',
+        'Sam'
+    ];
+    
+    return view('internals.customers',[
+        'customers' => $customers;
+    ]);
 });
 
