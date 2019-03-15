@@ -27,7 +27,9 @@ Route::get('customers', function () {
 
 Route::get('/projects', function(){
 
-    App\Project::all();
+    $projects = App\Project::all();
+    
+    return view('projects.index',compact('projects'));
 
 });
 
