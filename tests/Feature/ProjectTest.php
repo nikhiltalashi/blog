@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class ProjectTest extends TestCase
 {
     use WithFaker, RefreshDatabase;
-    
+    /** @test */
     public function a_user_can_create_a_project()
     {
         $attributes = [
