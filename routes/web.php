@@ -25,3 +25,8 @@ Route::get('customers', function () {
     ]);
 });
 
+Route::post('/projects', function(){
+
+    App\Project::create(request(['title','description']));
+
+});
