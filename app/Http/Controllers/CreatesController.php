@@ -20,7 +20,11 @@ class CreatesController extends Controller
             'description' => 'required'
         ]);
         
-        return "Validation Pass";
+        echo "<pre>";
+        print_r($request);
+        echo "</pre>";
+        
+        //return "Validation Pass";
         
     
     }
