@@ -33,7 +33,29 @@ class CreatesController extends Controller
     
     public function update($id){
     
-        return $id;
+       $articles = Article::find($id);
+       return view('update',['articles'=>$articles]);
+        
+    }
+    
+    public function edit(Request $request $id){
+    
+         $this->validate($request,[
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+        
+        $data = array(
+             'title' => $request->input('title');
+            'description' => $request->input('description');
+        );
+        
+        Article::where('id',$id)
+            ->update($data);
+        
+        $message = "Article with title as '".$request->input('title')."' Updated successfully!";
+        
+        return redirect('/')->with('info',$message); 
         
     }
 }
