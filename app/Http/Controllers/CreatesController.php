@@ -14,14 +14,18 @@ class CreatesController extends Controller
         
     }
     
-    public function add(Request $request){
-       /* $this->validate($request,[
+    public function add(){
+           return "Hi!!!";
+    }
+    
+   /* public function add(Request $request){
+        $this->validate($request,[
             'title' => 'required',
             'description' => 'required'
-        ]);*/
+        ]);
         
         return "Validation Pass";
         
     
-    }
+    }*/
 }
