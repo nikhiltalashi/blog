@@ -21,7 +21,12 @@ class CreatesController extends Controller
         ]);
         
         
-        //$data = $request->input();
+        $data = $request->input();
+        
+        echo "<pre>";
+        print_r($data);
+        echo "</pre>";
+            
         
         //return view('create', ['datas' => $data]);
         
