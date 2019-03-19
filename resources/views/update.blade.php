@@ -17,7 +17,7 @@
               <input class="form-control" name="title" id="exampleInput" placeholder="Title" rows="3" value="<?php echo $articles->title; ?>"></input>
             </div>
             <div class="form-group">
-              <input class="form-control" name="description" id="exampleInput" placeholder="Description" rows="3" value="<?php echo $articles->description; ?>}}"></input>
+              <input class="form-control" name="description" id="exampleInput" placeholder="Description" rows="3" value="<?php echo $articles->description; ?>"></input>
             </div>
             <button type="submit" class="btn btn-primary">Update</button>
             <a href="{{ url('/') }}" class="btn btn-secondary">Go Back</a>
