@@ -23,7 +23,7 @@
             <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('') }}">Create</a>
+            <a class="nav-link" href="{{ url('/create') }}">Create</a>
           </li>
         </ul>
       </div>
