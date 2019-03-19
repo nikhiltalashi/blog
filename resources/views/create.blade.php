@@ -14,10 +14,10 @@
                 @endforeach
             @endif
             <div class="form-group">
-              <input class="form-control" name="title" id="exampleInput" rows="3"></textarea>
+              <input class="form-control" name="title" id="exampleInput" placeholder="Title" rows="3"></textarea>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="description" id="exampleTextarea" rows="3"></textarea>
+              <textarea class="form-control" name="description" id="exampleTextarea" placeholder="Description" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
             <a href="{{ url('/') }}" class="btn btn-secondary">Go Back</a>
