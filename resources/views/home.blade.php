@@ -3,6 +3,11 @@
     <div class="row">
         <div class="col-md-12">
             <legend>Laravel CRUD Application</legend>
+            @if(session('info'))
+                <div class="alert alert-success">
+                    {{ session('info') }}
+                </div>
+            @endif
             <table class="table table-hover" style="text-align: center;">
               <thead>
                 <tr>
