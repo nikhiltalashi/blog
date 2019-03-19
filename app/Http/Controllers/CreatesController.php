@@ -20,8 +20,11 @@ class CreatesController extends Controller
             'description' => 'required'
         ]);
         */
+        
+        $data = $request->input();
+        
         echo "<pre>";
-        print_r($request);
+        print_r($data);
         echo "</pre>";
         
         //return "Validation Pass";
