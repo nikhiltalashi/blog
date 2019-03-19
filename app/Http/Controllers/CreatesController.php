@@ -68,7 +68,7 @@ class CreatesController extends Controller
     
     public function delete($id){
     
-        Article::where($id)
+        Article::where('id',$id)
             ->delete();
         
         $message = "Article with title as '".$request->input('title')."' deleted successfully!";
