@@ -1,3 +1,4 @@
+@include('layouts.header')
 <form>
   <fieldset>
     <legend>Legend</legend>
@@ -13,3 +14,4 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
+@include('layouts.footer')
