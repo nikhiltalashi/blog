@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <legend>Laravel CRUD Application</legend>
             @if(session('info'))
-                <div class="alert alert-success">
+                <div class="col-md-6 alert alert-success">
                     {{ session('info') }}
                 </div>
             @endif
