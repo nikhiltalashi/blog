@@ -5,6 +5,13 @@
         <form method="POST" action="url('/insert')">
           <fieldset>
             <legend>New Article</legend>
+            @if(count($errors) > 0)
+                @foreach($errors as $error)
+                   <div class="alert alert-danger">
+                    {{$error}}
+                   </div> 
+                @endforeach
+            @endif
             <div class="form-group">
               <input class="form-control" name="title" id="exampleInput" rows="3"></textarea>
             </div>
