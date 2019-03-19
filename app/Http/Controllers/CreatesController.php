@@ -20,11 +20,12 @@ class CreatesController extends Controller
             'description' => 'required'
         ]);
         
+        $data = $request->input();
         
           if ($validator->fails()) {
             return redirect('create')
                         ->withErrors($validator)
-                        ->withInput();
+                        ->withInput($data);
         }
         
         
