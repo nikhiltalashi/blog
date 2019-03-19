@@ -2,7 +2,7 @@
 <div class="container" style="margin-top : 25px">
     <div class="row">
         <div class="col-md-12">
-        <form method="POST" action="url('/insert')">
+        <form method="POST" action=" {{url('/insert')}} ">
           <fieldset>
             <legend>New Article</legend>
             @if(count($errors) > 0)
