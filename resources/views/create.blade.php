@@ -12,6 +12,7 @@
               <textarea class="form-control" name="description" id="exampleTextarea" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
+            <a href="{{ url('/') }}" class="btn btn-secondary">Go Back</a>
           </fieldset>
         </form>
         </div>
