@@ -13,6 +13,14 @@
                    </div> 
                 @endforeach
             @endif
+            
+             @if(count($inputs) > 0)
+                @foreach($inputs->all() as $input)
+                   <div class="alert alert-danger">
+                    {{$input->title}}
+                   </div> 
+                @endforeach
+            @endif
             <div class="form-group">
               <input class="form-control" name="title" id="exampleInput" placeholder="Title" rows="3"></textarea>
             </div>
