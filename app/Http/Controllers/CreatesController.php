@@ -15,10 +15,10 @@ class CreatesController extends Controller
     }
         
     public function add(Request $request){
-        $this->validate($request,[
+       /* $this->validate($request,[
             'title' => 'required',
             'description' => 'required'
-        ]);
+        ]);*/
         
         
         $data = $request->input();
