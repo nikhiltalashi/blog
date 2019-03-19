@@ -13,12 +13,8 @@ class CreatesController extends Controller
         return view('home', ['articles' => $articles]);
         
     }
-    
-    public function add(){
-           return "Hi!!!";
-    }
-    
-   /* public function add(Request $request){
+        
+    public function add(Request $request){
         $this->validate($request,[
             'title' => 'required',
             'description' => 'required'
@@ -27,5 +23,5 @@ class CreatesController extends Controller
         return "Validation Pass";
         
     
-    }*/
+    }
 }
