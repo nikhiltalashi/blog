@@ -8,4 +8,10 @@ Route::get('/create', function(){
     
 });
 
-Route::post('/insert','CreatesController@add');
+Route::get('/insert', function(){
+
+    return "add";
+    
+});
+
+//Route::post('/insert','CreatesController@add');
