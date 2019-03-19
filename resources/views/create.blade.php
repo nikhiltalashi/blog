@@ -5,9 +5,6 @@
         <form method="POST" action=" {{ url('/insert')}} ">
         {{ csrf_field() }}
           <fieldset>
-          @foreach($datas as $data)
-            {{ $data->tile }}
-          @endforeach
             <legend>New Article</legend>
             @if(count($errors) > 0)
                 @foreach($errors->all() as $error)
