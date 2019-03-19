@@ -13,16 +13,18 @@
                 </tr>
               </thead>
               <tbody>
+              @foreach($articles as $article)
                 <tr>
-                  <td>Column content</td>
-                  <td>Column content</td>
-                  <td>Column content</td>
+                  <td>{{ $article->id }}</td>
+                  <td>{{ $article->title }}</td>
+                  <td>{{ $article->description }}</td>
                   <td>
                     <a href="{{ url('') }}" class="btn btn-primary btn-sm">Read</a>
                     <a href="{{ url('') }}" class="btn btn-Success btn-sm">Update</a>
                     <a href="{{ url('') }}" class="btn btn-danger btn-sm">Delete</a>
                   </td>
                 </tr>
+               @endforeach
                </tbody>
             </table> 
         </div>
