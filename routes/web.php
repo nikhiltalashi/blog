@@ -10,4 +10,4 @@ Route::get('/create', function(){
 
 Route::post('/insert','CreatesController@add');
 Route::get('/update/{id}','CreatesController@update');
-Route::get('/edit/{id}','CreatesController@edit');
+Route::post('/edit/{id}','CreatesController@edit');
