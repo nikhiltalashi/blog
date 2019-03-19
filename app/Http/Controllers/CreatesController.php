@@ -30,4 +30,10 @@ class CreatesController extends Controller
         
         return redirect('/')->with('info',$message); 
     }
+    
+    public function update($id){
+    
+        return $id;
+        
+    }
 }
