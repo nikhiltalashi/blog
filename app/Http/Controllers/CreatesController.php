@@ -71,7 +71,7 @@ class CreatesController extends Controller
         Article::where('id',$id)
             ->delete();
         
-        $message = "Article with title as '".$request->input('title')."' deleted successfully!";
+        $message = "Article deleted successfully!";
         
         return redirect('/')->with('info',$message); 
         
