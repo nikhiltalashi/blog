@@ -46,8 +46,8 @@ class CreatesController extends Controller
         ]);
         
         $data = array(
-             'title' => $request->input('title');
-            'description' => $request->input('description');
+             'title' => $request->input('title'),
+            'description' => $request->input('description')
         );
         
         Article::where('id',$id)
