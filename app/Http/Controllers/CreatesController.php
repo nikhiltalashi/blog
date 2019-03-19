@@ -9,12 +9,8 @@ class CreatesController extends Controller
 {
     public function home(){
         
-        $articles = Article::all();
-        echo "<pre>";
-        print_r($articles);
-        echo "</pre>";
-    
-        //return view('home');
+        $articles = Article::all();   
+        return view('home', ['articles' => $articles]);
         
     }
 }
