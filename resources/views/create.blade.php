@@ -5,7 +5,7 @@
         <form method="POST" action=" {{ url('/insert')}} ">
         {{ csrf_field() }}
           <fieldset>
-          @if(count($data) > 0)
+          @if($data === null)
           @foreach($data as $data)
             {{ $data->tile }}
           @endforeach
