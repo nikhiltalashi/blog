@@ -13,19 +13,11 @@
                    </div> 
                 @endforeach
             @endif
-            
-             @if(count($inputs) > 0)
-                @foreach($inputs->all() as $input)
-                   <div class="alert alert-danger">
-                    {{$input->title}}
-                   </div> 
-                @endforeach
-            @endif
             <div class="form-group">
-              <input class="form-control" name="title" id="exampleInput" placeholder="Title" rows="3"></textarea>
+              <input class="form-control" name="title" id="exampleInput" placeholder="Title" rows="3" value="{{ old('title') }}"></textarea>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="description" id="exampleTextarea" placeholder="Description" rows="3"></textarea>
+              <textarea class="form-control" name="description" id="exampleTextarea" placeholder="Description" rows="3" value="{{ old('description') }}"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
             <a href="{{ url('/') }}" class="btn btn-secondary">Go Back</a>
