@@ -21,11 +21,11 @@ class CreatesController extends Controller
         ]);
         
         
-        $data = $request->input();
+        //$data = $request->input();
         
-        return view('create', ['datas' => $data]);
+        //return view('create', ['datas' => $data]);
         
-        //return "Validation Pass";
+        return "Validation Pass";
         
     
     }
