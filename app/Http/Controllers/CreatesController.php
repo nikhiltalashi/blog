@@ -38,7 +38,7 @@ class CreatesController extends Controller
         
     }
     
-    public function edit(Request $request $id){
+    public function edit(Request $request, $id){
     
          $this->validate($request,[
             'title' => 'required',
