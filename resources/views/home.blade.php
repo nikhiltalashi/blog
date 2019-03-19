@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12">
             <legend>Laravel CRUD Application</legend>
-            <table class="table table-hover">
+            <table class="table table-hover" style="text-align: center;">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -18,8 +18,8 @@
                   <td>Column content</td>
                   <td>Column content</td>
                   <td>
-                    <a href="{{ url('') }}" class="btn btn-primary btn-sm">Read</a> | 
-                    <a href="{{ url('') }}" class="btn btn-Success btn-sm">Update</a> | 
+                    <a href="{{ url('') }}" class="btn btn-primary btn-sm">Read</a>
+                    <a href="{{ url('') }}" class="btn btn-Success btn-sm">Update</a>
                     <a href="{{ url('') }}" class="btn btn-danger btn-sm">Delete</a>
                   </td>
                 </tr>
