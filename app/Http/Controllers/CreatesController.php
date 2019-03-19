@@ -30,7 +30,7 @@ class CreatesController extends Controller
         
         //return view('create', ['datas' => $data]);
         
-        return "Validation Pass";
+        //return "Validation Pass";
         
     
     }
