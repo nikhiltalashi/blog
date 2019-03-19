@@ -7,3 +7,5 @@ Route::get('/create', function(){
     return view('create');
     
 });
+
+Route::post('/insert','CreatesController@insert');
