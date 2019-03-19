@@ -9,5 +9,5 @@ Route::get('/create', function(){
 });
 
 Route::post('/insert','CreatesController@add');
-Route::post('/update/{id}','CreatesController@update');
+Route::get('/update/{id}','CreatesController@update');
 Route::post('/edit/{id}','CreatesController@edit');
