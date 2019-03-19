@@ -23,7 +23,7 @@ class CreatesController extends Controller
         
         $data = $request->input();
         
-        return view('create', ['data' => $data]);
+        return view('create', ['datas' => $data]);
         
         //return "Validation Pass";
         
