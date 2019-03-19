@@ -4,14 +4,14 @@
         <div class="col-md-12">
         <form>
           <fieldset>
-            <legend>Create New Article</legend>
+            <legend>New Article</legend>
             <div class="form-group">
               <input class="form-control" name="title" id="exampleInput" rows="3"></textarea>
             </div>
             <div class="form-group">
               <textarea class="form-control" name="description" id="exampleTextarea" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Create</button>
           </fieldset>
         </form>
         </div>
