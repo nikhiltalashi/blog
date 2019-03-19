@@ -3,6 +3,7 @@
     <div class="row">
         <div class="col-md-12">
         <form method="POST" action=" {{ url('/insert')}} ">
+        {{ csrf_field() }}
           <fieldset>
             <legend>New Article</legend>
             @if(count($errors) > 0)
