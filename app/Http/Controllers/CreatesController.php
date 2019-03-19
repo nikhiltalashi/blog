@@ -13,4 +13,15 @@ class CreatesController extends Controller
         return view('home', ['articles' => $articles]);
         
     }
+    
+    public function insert(Request $request){
+        $this->validate($request,[
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+        
+        return "Validation Pass";
+        
+    
+    }
 }
