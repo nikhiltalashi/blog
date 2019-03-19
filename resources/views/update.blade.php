@@ -2,7 +2,7 @@
 <div class="container" style="margin-top : 25px">
     <div class="row">
         <div class="col-md-12">
-        <form method="POST" action=" {{ url('/edit') }} ">
+        <form method="POST" action=" {{ url('/edit', array($articles->id)) }} ">
         {{ csrf_field() }}
           <fieldset>
             <legend>New Article</legend>
