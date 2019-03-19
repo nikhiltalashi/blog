@@ -1,5 +1,5 @@
 @include('layouts.header')
-<div class="container">
+<div class="container" style="margin-top: 25px;">
     <div class="row">
         <div class="col-md-12">
             <legend>Laravel CRUD Application</legend>
