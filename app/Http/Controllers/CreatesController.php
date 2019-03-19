@@ -28,12 +28,13 @@ class CreatesController extends Controller
                         ->withInput();
         }
         
+        $articles = new Article;
+        $articles->title = $request->input('title');
+        $articles->description = $request->input('description');
+        $articles->save();
         
+        $message = "Article with title as '".$request->input('title')."' saved successfully!";
         
-        //return view('create', ['datas' => $data]);
-        
-        return "Validation Pass";
-        
-    
+        return redirect('/')->with('info',$message); 
     }
 }
