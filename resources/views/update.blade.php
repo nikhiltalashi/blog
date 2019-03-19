@@ -5,7 +5,7 @@
         <form method="POST" action=" {{ url('/edit', array($articles->id)) }} ">
         {{ csrf_field() }}
           <fieldset>
-            <legend>New Article</legend>
+            <legend>Update Article</legend>
             @if(count($errors) > 0)
                 @foreach($errors->all() as $error)
                    <div class="alert alert-danger">
