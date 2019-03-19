@@ -58,4 +58,12 @@ class CreatesController extends Controller
         return redirect('/')->with('info',$message); 
         
     }
+    
+    public function read($id){
+    
+        $articles = Article::find($id);
+        return view('read',['articles'=>$articles]);
+         
+    }
+    
 }
