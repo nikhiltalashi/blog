@@ -25,7 +25,7 @@
                   <td>{{ $article->description }}</td>
                   <td>
                     <a href="{{ url('') }}" class="btn btn-primary btn-sm">Read</a>
-                    <a href="{{ url('/update/{$article->id}') }}" class="btn btn-Success btn-sm">Update</a>
+                    <a href='{{ url("/update/{$article->id}") }}' class="btn btn-Success btn-sm">Update</a>
                     <a href="{{ url('') }}" class="btn btn-danger btn-sm">Delete</a>
                   </td>
                 </tr>
