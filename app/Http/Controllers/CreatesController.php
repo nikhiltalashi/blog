@@ -25,7 +25,7 @@ class CreatesController extends Controller
           if ($validator->fails()) {
             return redirect('create')
                         ->withErrors($validator)
-                        ->withInput($data);
+                        ->withInput();
         }
         
         
