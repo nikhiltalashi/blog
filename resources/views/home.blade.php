@@ -18,9 +18,9 @@
                   <td>Column content</td>
                   <td>Column content</td>
                   <td>
-                    <a href="{{ url('') }}" class="label label-primary">Read</a> | 
-                    <a href="{{ url('') }}" class="label label-Success">Update</a> | 
-                    <a href="{{ url('') }}" class="label label-danger">Delete</a>
+                    <a href="{{ url('') }}" class="btn btn-primary">Read</a> | 
+                    <a href="{{ url('') }}" class="btn btn-Success">Update</a> | 
+                    <a href="{{ url('') }}" class="btn btn-danger">Delete</a>
                   </td>
                 </tr>
                </tbody>
